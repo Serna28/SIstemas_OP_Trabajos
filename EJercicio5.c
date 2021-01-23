@@ -42,17 +42,12 @@ int main()
     printf(" C es más rápido de ejecutar que EN Java pero se tarda más a compilar y ejecutar un programa que en Java. \n");
 
     printf(" ---------------------------------------------------------- \n");
-    //Pregunta 6
     
-    printf(" \n");
-    printf(" \n");
-
-    printf(" ---------------------------------------------------------- \n");
 
     //Pregunta 7
     
-    printf(" \n");
-    printf(" \n");
+    printf(" En el programa anterior se utilizó stdio.h ¿Dónde está almacenado este archivo en Linux?\n");
+    printf(" Segun el comando locate, esta en /usr/include/stdio.h \n");
 
     printf(" ---------------------------------------------------------- \n");
 
