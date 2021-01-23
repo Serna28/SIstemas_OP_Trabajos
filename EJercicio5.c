@@ -110,7 +110,26 @@ int main()
 
     //Pregunta 13
     
-    printf(" \n");
+    printf(" Explique detalladamente el resultado del programa\n");
+
+    
+    printf(" Imprime el caracter W, desde el inicio, normal\n");
+    
+    printf(" IMprime el caracter W, con 4 espacios a la izquierda (porciento 4) \n");
+    
+    printf(" Imprime el int 1, normal\n");
+    
+    printf(" IMprime el int 29, desde el principio \n");
+    
+    printf(" IMprime el int 29, con 10 espacios a la izquierda (porciento 10)\n");
+    
+    printf(" IMprime 10 espacios, esto teniendo encuenta el numero que posee, en este caso, 29, por ende este generara 8 ceros a la izquierda \n");
+    
+    printf(" IMprime el 29 solo en octal\n");
+    
+    printf(" Imprime el 29 en sistema hexadecimal\n");
+    
+
     printf(" \n");
 
     printf(" ---------------------------------------------------------- \n");
