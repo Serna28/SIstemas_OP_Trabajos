@@ -104,6 +104,7 @@ int main()
     
     printf("Explicar el programa Lab2\n");
     printf("LO que hace este programa, es que pide al usuario que digite caracteres, por eso se declara como char, luego se realiza un ciclo, el cual va almacenando los caracteres que el usuario ingrese, todo esto hasta que este digite ('X'), lo cual da fin al programa\n");
+    printf("Existen 2 espacios(new line) entre el ultitmo caracter y la primera 'X'\n");
 
     printf(" ---------------------------------------------------------- \n");
 
