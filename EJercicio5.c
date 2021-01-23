@@ -4,6 +4,8 @@
 int main()
 {
     //Pregunta 1
+    printf("\n");
+    
     printf( " ¿Qué es un lenguaje imperativo y qué otro lenguaje imperativo usted conoce muy bien? \n");
     printf(" Un lenguage imperativo son las instrucciones que se ejecutan unas tras otras, de manera secuencial, salvo cuando se encuentran estructuras de control condicionales o bucles \n");
     printf(" Y Hasta el momento solo conozco C,C++,C#, Java y emsambladores por arquitectura \n");
@@ -19,6 +21,13 @@ int main()
 
 
     printf(" -----------------------------------------  \n");
+
+    //Pregunta 3
+
+    printf(" C no tiene garbage collection ¿Qué lenguaje que usted conoce tiene garbage collection y para qué sirve? \n");
+    printf(" Garbage Collector es un programa que administra la memoria automáticamente, en donde la desasignación de objetos es manejada por Java en lugar del programador \n");
+
+    printf(" ------------------------------------------ \n");
 
 
    
