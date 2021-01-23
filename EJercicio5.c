@@ -60,22 +60,43 @@ int main()
 
     //Pregunta 9
     
-    printf(" \n");
-    printf(" \n");
+    printf(" Dado el siguiente conjunto de instrucciones cuales son los valores de las variables a lo largo de la ejecución del código \n");
+
+    int i, j,k = 5;
+    k++;
+
+    printf("%d es el valor de k\n",k);
+    --k;
+    printf("%d es el valor de k\n",k);
+
+    k=5;
+    printf("%d es el valor de k\n", k);
+
+    i=4*k++;
+    
+    printf("%d es el valor de i\n",i);
+
+    k=5;
+    printf("%d es el valor de k\n", k);
+    
+    j=4 * ++k;
+    
+    printf("%d es el valor de j\n",j);
 
     printf(" ---------------------------------------------------------- \n");
 
     //Pregunta 10
     
-    printf(" \n");
-    printf(" \n");
+    printf(" ¿Qué código ASCII le corresponde al caracter de nueva línea (newline) y cuál es la secuencia de escape de nueva línea?\n");
+    printf(" Según lo que investigue, el salto de linea es el caracter 010\n");
+    printf(" y su secuencia de linea sería (/n) \n");
 
     printf(" ---------------------------------------------------------- \n");
 
     //Pregunta 11
     
-    printf(" \n");
-    printf(" \n");
+    printf(" Si mediante el teclado se ingresa la secuencia de caracteres UdeA y luego ENTER, indique el secuencia de bytes que será almacenada en el flujo de entrada \n");
+    printf(" 00000000  55 64 65 41 0a |UdeA.|00000005 \n");
 
     printf(" ---------------------------------------------------------- \n");
 
