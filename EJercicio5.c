@@ -53,8 +53,8 @@ int main()
 
     //Pregunta 8
     
-    printf(" \n");
-    printf(" \n");
+    printf(" Escriba la secuencia de bytes correspondiente a la cadena de caracteres: “Hola Mundo\r\n”\n");
+    printf(" 0x48 0x6f 0x6c 0x61 0x4d 0x75 0x6e 0x64 0x6f 0x5c 0x72 0x5c 0x6e\n");
 
     printf(" ---------------------------------------------------------- \n");
 
