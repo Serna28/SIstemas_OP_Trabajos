@@ -38,8 +38,8 @@ int main()
 
     //Pregunta 5
     
-    printf(" \n");
-    printf(" \n");
+    printf(" ¿Cuál es la diferencia entre el código compilado de un programa en C con uno en Java?\n");
+    printf(" C es más rápido de ejecutar que EN Java pero se tarda más a compilar y ejecutar un programa que en Java. \n");
 
     printf(" ---------------------------------------------------------- \n");
     //Pregunta 6
