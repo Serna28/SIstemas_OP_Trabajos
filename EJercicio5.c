@@ -5,7 +5,7 @@ int main()
 {
     //Pregunta 1
     printf("\n");
-    
+
     printf( " ¿Qué es un lenguaje imperativo y qué otro lenguaje imperativo usted conoce muy bien? \n");
     printf(" Un lenguage imperativo son las instrucciones que se ejecutan unas tras otras, de manera secuencial, salvo cuando se encuentran estructuras de control condicionales o bucles \n");
     printf(" Y Hasta el momento solo conozco C,C++,C#, Java y emsambladores por arquitectura \n");
@@ -28,6 +28,103 @@ int main()
     printf(" Garbage Collector es un programa que administra la memoria automáticamente, en donde la desasignación de objetos es manejada por Java en lugar del programador \n");
 
     printf(" ------------------------------------------ \n");
+
+    //Pregunta 4
+
+    printf(" ¿Qué es la biblioteca estándar de C y para qué sirve?\n");
+    printf(" es una recopilación de archivos de cabecera y bibliotecas con rutinas, estandarizadas por un comité de la Organización Internacional para la Estandarización (ISO), que implementan operaciones comunes, tales como las de entrada y salida o el manejo de cadenas.\n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 5
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+    //Pregunta 6
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 7
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 8
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 9
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 10
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 11
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 12
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 13
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 14
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 15
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 16
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
+
+    //Pregunta 17
+    
+    printf(" \n");
+    printf(" \n");
+
+    printf(" ---------------------------------------------------------- \n");
 
 
    
