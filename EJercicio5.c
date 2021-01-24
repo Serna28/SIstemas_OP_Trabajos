@@ -136,7 +136,17 @@ int main()
 
     //Pregunta 14
     
+    printf(" Explique detalladamente el resultado del programa \n");
+
     printf(" \n");
+    printf(" \n");
+    printf(" \n");
+    printf(" \n");
+    printf(" \n");
+    printf(" \n");
+    printf(" \n");
+
+    
     printf(" \n");
 
     printf(" ---------------------------------------------------------- \n");
