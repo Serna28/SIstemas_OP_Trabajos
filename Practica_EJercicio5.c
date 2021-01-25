@@ -1,30 +1,40 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 int main()
 {
-    int operando1;
-    int operando2;
-    int opcion;
+    int operando1, operando2,esultado;
+    char opcion;
+    
 
-    printf("Digite el primer operando n\");
-    scanf("%d",&operando1);
+    printf("Ingrese el primer operando \n");
+    scanf(" %i", &operando1);
 
-    printf("Digite el segundo operando n\");
-    scanf("%d",&operando2);
+    printf("Ingrese el segundo operando\n");
+    scanf(" %i", &operando2);
 
-    printf("Digite que desea, 1 para sumar, 2 para multiplicar o 3 para dividir");
-    scanf("%d",opcion);
+    printf("DIgite que opcion que desea \n1.Suma \n2.REsta \n3.MUltiplicacion \n");
+    scanf(" %c", &opcion);
 
     switch(opcion)
     {
         case '1':
-        printf("%d El resultado de la suma es",opcion1 + opcion2);
-        break;
+           esultado = (operando1 + operando2);
+           break;  
 
+        case '2':
+           esultado = (operando1 - operando2);
+           break;
+
+        case '3':
+           esultado = (operando1 * operando2);
+      
+ 
     }
+    printf("EL resultado es %i \n",esultado);
 
 
-
-
+  
 
 }
