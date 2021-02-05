@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+char *fgets(char *str, int n, FILE *stream);
 
 int main(void)
 {
