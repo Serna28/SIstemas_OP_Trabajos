@@ -28,9 +28,9 @@
      }
      imprimir(elementos, a);
 
-     printf("\n Ingrese que posicion desea cambiar: \n");
+     printf("\n Ingrese que posicion desea cambiar: /Recuerde que va des la posicion 1 hasta el tamaño) \n");
      scanf("%d", &cambio);
-     cambio--;
+     cambio=cambio-1;
      for(int i = a;i >= cambio; i--)
      {
          elementos[i+1] = elementos[i];
