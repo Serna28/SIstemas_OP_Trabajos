@@ -5,7 +5,7 @@
 
 const char entrada[MAX];
 const char salida[MAX];
-uint eleccion =0;
+int eleccion =0;
 
 void XOR(FILE * IN_FILE, FILE * salida);
 void NOT(FILE * IN_FILE, FILE * salida);
