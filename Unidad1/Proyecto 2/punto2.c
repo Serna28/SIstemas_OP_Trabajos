@@ -7,19 +7,20 @@
 #include <string.h>
 
 //La estructura que fue dada por el profe en la pagina
-struct estudiante
+typedef struct estudiante
 {
     int cedula;
     char nombre[30];
     int semestre;
-}estudiantes;
+}estudiante;
 
-struct BasedeDatos
+typedef struct BasedeDatos
 {
     int size;
     char nombre[30];
-    struct estudiante* Reg;    
-};
+    int max;
+    estudiante* Reg;    
+}BasedeDatos;
 
 
 //Variables GLobales para un manejo mas practico de estos
@@ -31,16 +32,15 @@ struct BasedeDatos *Activa;
 
 FILE *IN_File, *OUT_PUTFile;
 int p =0;
-int wenitas;
 int numRegis = 0;
 int contbas=0;
 char linea[50];
+int wenitas=0;
 
 //Las funciones que fueron necesarias para la ejecuacion de este proyecto
 
 void funcionmkdb(char nombre[30], int cantRegis, int i);
 
-void funcionlsdbs();
 
 void funciongdb(struct BasedeDatos *almacenar);
 
@@ -50,13 +50,13 @@ void funcionsvdb();
 
 void funcionradb();
 
+void funcionlsdbs();
+
 void funcionsvdb();
 
 void funcionrsdb();
 
 void funcionloadb();
-
-// funcion ldb
 
 void funcionmreg(int cedulaN, char nombreN[20], int semestreN);
 
@@ -67,18 +67,16 @@ void funcionexito(char fileName[30]);
 
 //Main donde se realizan los procesos basicos
 
-int main(void){
+int main(int argc, char const *argv[]){
+
+     Activa = (BasedeDatos*)malloc(sizeof(BasedeDatos)*30);
 
     char p1[30], p3[50], nombre1[30], leer[30], c, nombreDBActiva[30];
-    int cedula1, semestre1, Cbuscar, opcion=0, isa =0, dbnew=0;
+    int cedula1, semestre1, Cbuscar, opcion=0, isa =0, dbnew=0,CONTADOR =0;
 
     do
     {
-       //Me parecio mas sencillo ingresar comando y luego los nombres/registros
-        printf("Ingrese comando \n");
-        
-        scanf("%s",leer);
-        while ( (c = getchar()) != '\n' && c != EOF ) { }
+
         
         if (strcmp(leer,"mkdb") == 0)
         {
@@ -92,7 +90,7 @@ int main(void){
         }
         else if (strcmp(leer,"lsdbs") == 0)
         {
-            funcionlsdbs();
+            funcionlsdbs();      
         }
         else if (strcmp(leer,"gdb") == 0)
         {
@@ -117,6 +115,7 @@ int main(void){
         {
             funcionrsdb();
         }
+
         else if (strcmp(leer,"mreg") == 0)
         {
             printf("Ingrese la cédula del nuevo registro:\n");
@@ -142,8 +141,8 @@ int main(void){
         else if (strcmp(leer,"loadb")== 0)
         {
            printf("Ingrese el nombre del archivo: \n");
-            scanf("%s",p3);
-            funcionloadb(p);
+           scanf("%s",p3);
+           funcionloadb();
             printf("Cargado correctamente \n");
         }
         
@@ -170,9 +169,8 @@ int main(void){
 
 void funcionmkdb(char nombre[40], int cantRegis,int i)
 {
- if (i == 0)
- {
-
+    if(i==0)
+    {
         Almacenamiento = malloc(sizeof(struct estudiante)*cantRegis);
         AlmacenamientoDatos = malloc(sizeof(struct BasedeDatos)*10);
         AlmacenamientoDatos->size = cantRegis;
@@ -180,26 +178,17 @@ void funcionmkdb(char nombre[40], int cantRegis,int i)
         AlmacenamientoDatos->Reg = Almacenamiento;
         Activa = AlmacenamientoDatos;
         printf("%s fue creada correctamente\n", (AlmacenamientoDatos+i)->nombre);
- }
-    else{
+    }
+    else
+    {
         Almacenamiento = malloc(sizeof(struct estudiante)*cantRegis);
         (AlmacenamientoDatos+i)->size = cantRegis;
         strcpy((AlmacenamientoDatos+i)->nombre,nombre);
         (AlmacenamientoDatos+i)->Reg = Almacenamiento;
         Activa = (AlmacenamientoDatos+i);
-        printf("%s fue creada correctamente\n", (AlmacenamientoDatos+i)->nombre);        
-   } 
-}
-
-void funcionlsdbs(){
-    int i = 0;
-    printf("Base en nemoria : \n");
-    while ((AlmacenamientoDatos+i)->size != 0)
-    {
-        printf("%s \n",(AlmacenamientoDatos+i)->nombre);
-        i++;
+        printf("%s fue creada correctamente\n", (AlmacenamientoDatos+i)->nombre);       
     }
-
+        
 }
 
 void funcionloadb()
@@ -229,6 +218,19 @@ void funcionloadb()
     }
     fclose(IN_File);
    }
+
+   
+}
+
+void funcionlsdbs()
+{
+    int i = 0;
+    printf("Base en nemoria : \n");
+    while ((AlmacenamientoDatos+i)->size != 0)
+    {
+        printf("%s \n",(AlmacenamientoDatos+i)->nombre);
+        i++;
+    }
 }
 
 void funciongdb(struct BasedeDatos *almacenar)
@@ -264,8 +266,10 @@ void funcionsvdb(){
     {
         fprintf(OUT_PUTFile, "%s %d %d\n", (Almacenamiento+i)->nombre,(Almacenamiento+i)->cedula, (Almacenamiento+i)->semestre);
     }
+//mirar fflush
 
     fclose(OUT_PUTFile);
+    
 }
 
 void funcionradb(){
