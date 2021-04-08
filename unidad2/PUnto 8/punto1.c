@@ -5,7 +5,7 @@
  int main(int argc, char  *argv[])
  {
          pid_t pid_hijo;
-         char Valores[3][10]={"./Prom : \n","./Max : \n","./Min : \n"};
+         char Valores[3][10]={"./Pro : \n","./Max : \n","./Min : \n"};
          
          for(int i = 0; i < 3 ; i++)
          {
