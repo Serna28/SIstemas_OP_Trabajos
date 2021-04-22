@@ -21,13 +21,11 @@ int main(int argc, char *argv[])
         printf("Problema al abrir el archivo \n");
     }
     while(!feof(IN_FILE))
-    {
-     
+    {     
         fscanf(IN_FILE, "%s %d", name, &Valores[isa]);
         strcpy(nOMBRES[isa], name);
 
-        isa++;
-     
+        isa++;    
     }
     for(int m = 1; m < isa; m++)
     {
@@ -44,8 +42,7 @@ int main(int argc, char *argv[])
             strcpy(nOMBRES[i-1], nOMBRES[i]);
             strcpy(nOMBRES[i], nameS);
          
-            }
-          
+            }          
         }
     }
     OUT_FILE =  fopen(ComandoS, "w");
@@ -54,11 +51,7 @@ int main(int argc, char *argv[])
     {   
         
         fprintf(OUT_FILE,"%s %d\n", nOMBRES[k],Valores[k]);
-    }
-
-
-
-     
+    }    
     fclose(IN_FILE);
     fclose(OUT_FILE);
     

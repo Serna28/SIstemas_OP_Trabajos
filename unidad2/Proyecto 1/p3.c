@@ -23,11 +23,8 @@ int main(int argc, char *argv[])
        }
     }
 
-
 wait(NULL);
 wait(NULL);
-
-
 IN_FILE =  fopen(argv[2], "r");
 
 printf("Archivo de p1 \n");
@@ -49,7 +46,7 @@ if(IN_FILE == NULL)
   fclose(IN_FILE);
   IN_FILE =  fopen(argv[3], "r");
 
-  printf("\n-------------------")
+  printf("\n-------------------");
 
   printf("Cambio de archivo \n");
 
