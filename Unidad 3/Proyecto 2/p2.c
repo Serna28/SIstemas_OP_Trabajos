@@ -31,7 +31,7 @@ void *recibirmsg(void *parametro)
             exit(8);
         }
         printf("Sernita Says:  %s \n", buf.msg);
-        holder = strcmp(buf.msg,"XD");
+        holder = strcmp(buf.msg,"pitufo");
         if (holder==0)
         {
             break;

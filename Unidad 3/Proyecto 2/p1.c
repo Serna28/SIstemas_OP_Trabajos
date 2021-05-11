@@ -33,7 +33,7 @@ void *recibirmsg(void *parametro)
             exit(8);
         }
         printf("Mazo Says:  %s \n", buf.msg);
-        holder = strcmp(buf.msg,"XD");
+        holder = strcmp(buf.msg,"sapo");
         if (holder==0)
         {
             break;
@@ -44,7 +44,7 @@ void *recibirmsg(void *parametro)
     exit(8);
 }
 
-void *enviarmsg(void *parametro){//FUNCION ENVIAR MENSAJE
+void *enviarmsg(void *parametro){
     struct msgbuf buf;
     struct parametro *isa = (struct parametro*) parametro;
     int lenght;
@@ -86,7 +86,7 @@ pthread_t hrecibir;
 int id1;
 int id2;
 
-system("touch cola1.txt"); //Creamos la cola 1
+system("touch cola1.txt"); 
 
 if((key1 = ftok("cola1.txt", 'B')) == -1){
     perror("Error en FTOK");
@@ -99,8 +99,7 @@ if ((id1 = msgget(key1,PERMISOS | IPC_CREAT)) == -1){
     
 }
 
-system("touch cola2.txt"); //Creamos la cola 2
-
+system("touch cola2.txt"); 
 if((key2 = ftok("cola2.txt", 'B')) == -1){
     perror("Error en FTOK");
     exit(1);
