@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
             int isa = 0;
             while(Entrada[isa])           
             {
-                Entrada[isa] = tolower(Entrada[j]);
+                Entrada[isa] = tolower(Entrada[isa]);
                 isa++;
             }
             write(pfd[1],Entrada,BUF_SIZE);
